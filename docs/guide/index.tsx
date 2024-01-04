@@ -14,11 +14,6 @@ export default () => {
       id: 'circle'
     })
     map.setFitView('circle');
-
-
-    setTimeout(() => {
-      map.remove('circle')
-    },2000)
   }
 
 
