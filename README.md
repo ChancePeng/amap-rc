@@ -5,34 +5,71 @@
 
 A react library developed with dumi
 
-## Usage
+基于 [amap-core](https://github.com/ChancePeng/amap-core) 封装的 React 组件
 
-TODO
+## INSTALL
 
-## Options
+### 设置镜像源：
 
-TODO
+`http://47.93.163.104:4873/`
 
-## Development
+推荐使用 `nrm` 管理源地址
 
-```bash
-# install dependencies
-$ yarn install
+全局安装 `nrm`
 
-# develop library by docs demo
-$ yarn start
+```shell
+npm install nrm -g
+```
 
-# build library source code
-$ yarn run build
+添加源:
 
-# build library source code in watch mode
-$ yarn run build:watch
+```shell
+nrm add change http://47.93.163.104:4873/
+```
 
-# build docs
-$ yarn run docs:build
+使用源：
 
-# check your project for potential problems
-$ yarn run doctor
+```shell
+nrm use change
+```
+
+### 安装
+
+```shell
+npm install @change/amap-rc
+```
+
+or
+
+```shell
+yarn add @change/amap-rc
+```
+
+## DOCS
+
+[link to doc](https://chancepeng.github.io/amap-rc/api)
+
+[API DOCUMENT](https://chancepeng.github.io/amap-core/api)
+
+## 使用
+
+```tsx
+import Map from '@change/amap-rc';
+
+export default () => {
+  const map = Map.useMap();
+
+  const onReady = () => {
+    map.add(AMap.Polygon, {
+      path: [],
+      id: 'polygon',
+    });
+
+    map.get('polygon');
+  };
+
+  return <Map map={map} onReady={onReady} />;
+};
 ```
 
 ## LICENSE
