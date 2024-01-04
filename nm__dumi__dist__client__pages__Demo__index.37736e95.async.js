@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_change_amap_rc=self.webpackChunk_change_amap_rc||[]).push([[9],{65149:function(v,a,e){e.r(a),e.d(a,{default:function(){return o}});var n=e(27544),t=e(67294),m=function(){var u=(0,n.UO)(),c=u.id,d=(0,n.WF)(),s=d.demos,f=s[c]||{},r=f.component;return r&&(0,t.createElement)(r)},o=m}}]);
