@@ -3,8 +3,6 @@
 [![NPM version](https://img.shields.io/npm/v/@change/amap-rc.svg?style=flat)](https://npmjs.org/package/@change/amap-rc)
 [![NPM downloads](http://img.shields.io/npm/dm/@change/amap-rc.svg?style=flat)](https://npmjs.org/package/@change/amap-rc)
 
-A react library developed with dumi
-
 基于 [amap-core](https://github.com/ChancePeng/amap-core) 封装的 React 组件
 
 ## INSTALL
